@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Running chemistry backwards — Leo Vattoly</title>
+  <meta name="description" content="What reverse engineering means in polymer research.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="site-title">
+        <h1>Leo Vattoly</h1>
+        <p>AI Researcher &middot; Marie Sk&#322;odowska-Curie Doctoral Fellow &middot; Basque Center for Applied Mathematics</p>
+      </div>
+      <nav class="tabs">
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a href="../publications.html">Publications</a>
+        <a href="../blog.html" class="active">Blog</a>
+        <a href="../cv.html">CV</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <article class="post">
+        <h2>Running chemistry backwards: what reverse engineering means in my research</h2>
+        <p class="post-meta">July 2026 &middot; Leo Vattoly</p>
+
+        <p>
+          Most questions in chemistry run forward: if I mix these ingredients under these
+          conditions, what do I get? A large part of polymer science works this way &mdash; you choose a
+          temperature profile and feed rates, run the reaction, and characterize whatever particles
+          come out. If they are not what you wanted, you adjust and try again. Each attempt costs
+          time, material, and money.
+        </p>
+
+        <p>
+          My PhD asks the question in reverse. Suppose you already know the particle morphology you
+          want &mdash; because it gives a coating its toughness or an adhesive its tack. What conditions
+          should you run to get it? This is an inverse problem, and inverse problems are hard: many
+          different recipes can lead to similar products, the mapping is highly nonlinear, and there
+          is no analytical way to invert a polymerization model.
+        </p>
+
+        <p>
+          This is where deep learning earns its place. A neural network trained on simulations of
+          the forward process can learn enough structure to run the question backwards, proposing
+          temperature profiles and monomer feed rates that steer the reaction toward the target
+          morphology. It will not replace the chemist &mdash; but it can replace a lot of
+          trial-and-error.
+        </p>
+
+        <p>
+          If this sounds interesting, the details are in our paper currently under revision at
+          <em>Applied Intelligence</em> &mdash; see the <a href="../publications.html">Publications</a> page.
+        </p>
+      </article>
+
+      <p><a href="../blog.html">&larr; Back to all posts</a></p>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2026 Leo Vattoly &middot; Images on this site may not be reproduced without permission
+    </div>
+  </footer>
+
+  <script src="../js/protect.js"></script>
+</body>
+</html>
