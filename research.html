@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Leo Vattoly</title>
+  <meta name="description" content="Research of Leo Vattoly: machine learning for polymer reaction engineering, early time series classification, process monitoring.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="site-title">
+        <h1>Leo Vattoly</h1>
+        <p>AI Researcher · Marie Skłodowska-Curie Doctoral Fellow · Basque Center for Applied Mathematics (BCAM)</p>
+      </div>
+      <nav class="tabs">
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <h2>Research overview</h2>
+      <p>
+        My work sits at the intersection of machine learning and chemical process engineering. Emulsion
+        polymerization produces the polymer particles behind coatings, adhesives, and biomedical materials,
+        and the properties of the final product depend critically on how the reaction is run. I build
+        deep learning methods that (i) design the reaction — predicting the operating conditions that will
+        produce a desired particle morphology — and (ii) monitor the reaction, detecting deviations early
+        enough to intervene.
+      </p>
+
+      <h3>Reverse engineering polymerization conditions with deep learning</h3>
+      <p>
+        Achieving a target particle morphology traditionally requires expensive trial-and-error
+        experimentation. This project inverts the problem: given the morphology you want, a neural network
+        framework predicts the reaction parameters — temperature profiles and monomer feed rates — needed to
+        reach it. The approach was developed within the EU Horizon Europe CINEMA project in collaboration
+        with POLYMAT (UPV/EHU) and presented at the 8th Machine Learning and AI in (Bio)Chemical Engineering
+        Conference at the University of Cambridge. A first-author paper is under major revision at
+        <em>Applied Intelligence</em> (Springer).
+      </p>
+
+      <h3>Early detection of process deviations</h3>
+      <p>
+        Faults in a semi-batch polymerization are usually confirmed only after the reaction ends — when the
+        batch is already lost. This project formulates online monitoring as an early time series
+        classification problem: classify a running reaction as normal or deviating from multivariate signals
+        (reactor temperature, heat-release rate, monomer conversion) as early as a reliable decision allows.
+        A hybrid static–dynamic input architecture combines these trajectories with known feed-rate and
+        set-point profiles; across 300 evaluated configurations, the best models detect deviations with
+        90.5% accuracy after only ~23% of the batch time. To our knowledge this is the first application of
+        early time series classification to emulsion polymerization.
+      </p>
+
+      <h3>Earlier work: streaming anomaly detection for healthcare</h3>
+      <p>
+        At the Indian Statistical Institute, Kolkata, I led the Distributed Cognitive System for Healthcare
+        project, designing streaming anomaly detection models for real-time elderly care monitoring.
+      </p>
+
+      <!-- To add a new project: copy an <h3> + <p> block above -->
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Leo Vattoly · All rights reserved · Images on this site may not be reproduced without permission
+    </div>
+  </footer>
+
+  <script src="js/protect.js"></script>
+</body>
+</html>

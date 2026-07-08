@@ -1,0 +1,4 @@
+# Private files — never publish these to GitHub
+*.pdf
+_archive/
+.DS_Store
