@@ -2,3 +2,4 @@
 *.pdf
 _archive/
 .DS_Store
+*_files/
